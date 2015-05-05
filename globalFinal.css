@@ -1,3 +1,67 @@
-html{
-	color: red;
+.header {
+	height: 100px;
+	width: 100%;
+	display: block;
+	border: solid white 1px;
+	position: fixed;
+	text-align: center;
+	background-color: #91BC24;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+p {
+	background-color: #343434;
+	padding: 10px;
+	width: 109%;
+	height: 100%;
+	display: inline-block;
+	color: white;
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 10px;
+	white-space: nowrap;
+}
+p:hover {
+	background-color: #404040;
+}
+
+
+
+img{
+	position: relative;
+opacity: 1;
+width: 115%;
+height: 115%;
+padding: none;
+margin: none;
+}
+img:hover{
+opacity: .6;
+
+}
+
+.list {
+	display: inline-block;
+	position: relative;
+	width: 23%;
+	text-align: center;
+	left: 0;
+		margin-top: 10%;
+		margin-right: none;
+		margin-left: none;
+		padding:none;
+}
+#united_states{
+
+}
+#germany{
+
+}
+#chile{
+
+}
+#finland{
+
 }
