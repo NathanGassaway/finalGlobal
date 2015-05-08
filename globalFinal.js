@@ -34,10 +34,10 @@ var display = function(countries) {
 			$.getJSON("http://cooper-union-spotify-proxy.herokuapp.com/daily/"+specificCountry+"/latest", function(response) {
 					
 
-				for (i = 0; i<=9; i++) {
+				for (i = 0; i<=19; i++) {
 					console.log(response.tracks[i]);
 					// $("."+ specificCountry).append(response.tracks[i].track_name);
-						$("."+ specificCountry).append("<span class="+specificSelector+">"+ "<p>||</p>"+ "<img src="+response.tracks[i].artwork_url+" class='hover'/>"+"</span>");
+						$("."+ specificCountry).append("<span class="+specificSelector+">"+ "<img src="+response.tracks[i].artwork_url+" class='hover'/>"+"</span>");
 						// $("#"+ specificSelector).append("<p>" + response.tracks[i].num_streams + "</p>");
 
 				};

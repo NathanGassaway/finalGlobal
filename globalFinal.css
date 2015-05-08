@@ -1,5 +1,10 @@
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
 .header {
-	height: 100px;
+	height: 20%;
 	width: 100%;
 	display: block;
 	border: solid white 1px;
@@ -9,12 +14,56 @@
 	z-index: 2;
 	top: 0;
 	left: 0;
-	right: 0;
+	float: left;
+}
+.header1{
+	display: inline-block;
+	position: relative;
+	height: 100%;
+	width: 23%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	padding: none;
+}
+#first{
+	position: relative;
+	display: inline-block;
+	background-image: url(http://vignette4.wikia.nocookie.net/flat-ride/images/5/55/USA.png/revision/latest?cb=20121127165529);
+	background-size: 100%;
+	float: left;
+}
+#second{
+	position: relative;
+	display: inline-block;
+	background-image: url(https://gramps-project.org/wiki/images/a/a4/450px-Flag_of_Germany.png);
+	background-size: 100%;
+	float: left;
+}
+#third{
+	position: relative;
+	display: inline-block;
+	background-image: url(http://flagpedia.net/data/flags/ultra/cl.png);
+	background-size: 100%;
+	float: left;
+}
+#fourth{
+	position: relative;
+	display: inline-block;
+	background-image: url(http://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Finland.png);
+	background-size: 100%;
+	float: left;
 }
 
+.overall{
+	position: relative;
+	display: block;
+	width: 100%;
+}
 p {
 	background-color: #343434;
 	padding: 10px;
+	margin:none;
 	width: 109%;
 	height: 100%;
 	display: inline-block;
@@ -30,28 +79,32 @@ p:hover {
 
 
 img{
-	position: relative;
-opacity: 1;
-width: 115%;
-height: 115%;
-padding: none;
-margin: none;
-}
+	display: inline-block;
+		position: relative;
+	opacity: 1;
+	width: 115%;
+	height: 115%;
+	padding: none;
+	margin: none;
+	top: 0;
+	left: 0;
+	float: left;
+	transition: width 1s, height 1s, opacity .3s, ease-out-in;
+	}
 img:hover{
 opacity: .6;
-
 }
 
 .list {
 	display: inline-block;
 	position: relative;
+	padding:none;
 	width: 23%;
 	text-align: center;
+	top: 0;
 	left: 0;
 		margin-top: 10%;
-		margin-right: none;
-		margin-left: none;
-		padding:none;
+
 }
 #united_states{
 
