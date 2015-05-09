@@ -34,9 +34,9 @@ var display = function(countries) {
 			$.getJSON("http://cooper-union-spotify-proxy.herokuapp.com/daily/"+specificCountry+"/latest", function(response) {
 					
 
-				for (i = 0; i<=19; i++) {
+				for (i = 0; i<=5; i++) {
 					console.log(response.tracks[i]);
-					// $("."+ specificCountry).append(response.tracks[i].track_name);
+					 $("."+ specificCountry).append("<a href='https://www.google.com/''>" + response.tracks[i].track_name + "</a>");
 						$("."+ specificCountry).append("<span class="+specificSelector+">"+ "<img src="+response.tracks[i].artwork_url+" class='hover'/>"+"</span>");
 						// $("#"+ specificSelector).append("<p>" + response.tracks[i].num_streams + "</p>");
 
@@ -57,8 +57,22 @@ display(countries);
 		$(".fi").removeClass("fi");
 		// $.getJSON("http://cooper-union-spotify-proxy.herokuapp.com/daily/ch/latest", function(response) {
 		// });
+		
 
 			        		});
+
+// $.getJSON("http://cooper-union-youtube-proxy.herokuapp.com/search/video/take+me+to+church", function(duck){
+		
+// 		for (i = 0; i<=2; i++) {
+
+// 	var description = duck.items[i].snippet.description;
+// 	console.log(duck)
+
+// $(".list").append("<p>" + description + "</p>");
+		
+// 		}
+// 	});
+
 });
 
 
