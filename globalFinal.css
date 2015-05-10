@@ -1,93 +1,101 @@
 html, body{
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	width: 100%;
+}
+a{
+	font-style: none;
+}
+.overall{
+	position: relative;
+	display: flex;
+	width: 105%;
+	padding: 0px;
+	margin: 0px;
 }
 
 .header {
-	height: 20%;
-	width: 100%;
+	height: 10%;
+	width: 105%;
 	display: block;
-	border: solid white 1px;
 	position: fixed;
 	text-align: center;
-	background-color: #91BC24;
+	background-color: #343434;
 	z-index: 2;
 	top: 0;
-
 	float: left;
+
 }
-.header1{
+.headerWrapper{
 	display: inline-block;
 	position: relative;
-	height: 100%;
-	width: 23%;
+	height: 105%;
+	width: 24%;
 	text-align: center;
 	top: 0;
-
-	padding: none;
+	margin: 0;
+	padding: 0;
 }
 #first{
 	position: relative;
 	display: inline-block;
-	background-image: url(http://vignette4.wikia.nocookie.net/flat-ride/images/5/55/USA.png/revision/latest?cb=20121127165529);
 	background-size: 100%;
 	float: left;
 }
 #second{
 	position: relative;
 	display: inline-block;
-	background-image: url(https://gramps-project.org/wiki/images/a/a4/450px-Flag_of_Germany.png);
 	background-size: 100%;
 	float: left;
 }
 #third{
 	position: relative;
 	display: inline-block;
-	background-image: url(http://flagpedia.net/data/flags/ultra/cl.png);
 	background-size: 100%;
 	float: left;
 }
 #fourth{
 	position: relative;
 	display: inline-block;
-	background-image: url(http://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Finland.png);
 	background-size: 100%;
 	float: left;
 }
 
-.overall{
+.header h1 {
 	position: relative;
-	display: block;
-	width: 100%;
-}
-p {
 	background-color: #343434;
-	padding: 10px;
-	margin:none;
-	width: 109%;
-	height: 100%;
-	display: inline-block;
+	padding-top: 10%;
+	margin: 0;
+	height: inherit;
 	color: white;
 	font-family: Helvetica, Arial, sans-serif; 
-	font-size: 10px;
-	white-space: nowrap;
-}
-p:hover {
-	background-color: #404040;
-}
-a {
-	display: none;
+	font-size: 2em;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color .3s, ease-out-in;
 }
 
+h1:hover {
+	background-color: #94C643;
+}
 
-img{
-	display: inline-block;
-		position: relative;
+.list {
+	display: block;
+	position: relative;	
+	width: 24%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	margin-top: 10%;
+	float: left;
+}
+
+.list img{
+	position: relative;
 	opacity: 1;
 	width: 100%;
 	height: 100%;
-	padding: none;
-	margin: none;
 	top: 0;
 	left: 0;
 	float: left;
@@ -98,26 +106,12 @@ img:hover{
 opacity: .6;
 }
 
-.list {
-	display: inline-block;
-	position: relative;
-	padding:none;
-	width: 23%;
-	text-align: center;
-	top: 0;
-	left: 0;
-		margin-top: 10%;
 
-}
 #united_states{
-
 }
 #germany{
-
 }
 #chile{
-
 }
 #finland{
-
 }
