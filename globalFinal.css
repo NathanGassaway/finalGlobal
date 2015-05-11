@@ -10,7 +10,7 @@ a{
 .overall{
 	position: relative;
 	display: flex;
-	width: 105%;
+	width: 100%;
 	padding: 0px;
 	margin: 0px;
 }
@@ -30,32 +30,14 @@ a{
 .headerWrapper{
 	display: inline-block;
 	position: relative;
-	height: 105%;
+	height: 100%;
 	width: 24%;
 	text-align: center;
 	top: 0;
 	margin: 0;
 	padding: 0;
 }
-#first{
-	position: relative;
-	display: inline-block;
-	background-size: 100%;
-	float: left;
-}
-#second{
-	position: relative;
-	display: inline-block;
-	background-size: 100%;
-	float: left;
-}
-#third{
-	position: relative;
-	display: inline-block;
-	background-size: 100%;
-	float: left;
-}
-#fourth{
+#first, #second, #third, #fourth{
 	position: relative;
 	display: inline-block;
 	background-size: 100%;
@@ -76,14 +58,13 @@ a{
 	transition: background-color .3s, ease-out-in;
 }
 
-h1:hover {
+.header h1:hover {
 	background-color: #94C643;
 }
 
 .list {
 	display: block;
 	position: relative;	
-	width: 24%;
 	text-align: center;
 	top: 0;
 	left: 0;
@@ -92,26 +73,69 @@ h1:hover {
 }
 
 .list img{
-	position: relative;
 	opacity: 1;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	left: 0;
 	float: left;
-	transition: width 1s, height 1s, opacity .1s, ease-out-in;
+	transition: width 1s, height 1s, opacity .5s, ease-out-in;
 	}
 
-img:hover{
-opacity: .6;
+.overlay {
+		position:absolute;
+		display: block;
+		z-index: -2;
+		background-color: black;
+		color: white;
+		height: 100%;
+		width: 100%;
+	}
+#numStream {
+	position: relative;
+	top: 20%;
+	font-family: Helvetica, Arial, sans-serif; 
 }
 
+.list img:hover{
+opacity: .2;
+}
 
-#united_states{
+.list a{	
+	display: inline-block;
+	position: relative;
+	margin:0;
+	padding:0;
+
 }
-#germany{
+
+@media all and (min-width:700px) and (max-width:1200px) {
+		.header h1 {
+	position: relative;
+	background-color: #343434;
+	padding-top: 20%;
+	margin: 0;
+	height: inherit;
+	font-size: 25px;
 }
-#chile{
+#numStream {
+	position: relative;
+	top: 15%;
+	font-size: 1.5em;
 }
-#finland{
+}
+
+@media all and (min-width:200px) and (max-width:700px) {
+	.header h1 {
+	position: relative;
+	background-color: #343434;
+	padding-top: 20%;
+	margin: 0;
+	height: inherit;
+
+	font-size: 15px;
+
+}
+#numStream {
+	position: relative;
+	top: 15%;
+	font-size: 1em;
 }
