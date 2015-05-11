@@ -105,8 +105,10 @@ opacity: .2;
 	padding:0;
 
 }
-
-@media all and (min-width:500px) and (max-width:1000px) {
+.ui-loader{
+	display: none;
+}
+@media all and (min-width:600px) and (max-width:1000px) {
 		.header h1 {
 	position: relative;
 	background-color: #343434;
@@ -122,25 +124,23 @@ opacity: .2;
 }
 }
 
-@media all and (min-width:100px) and (max-width:500px) {
+@media all and (min-width:300px) and (max-width:600px) {
 	.overlay{
 
 	}
 	.header h1 {
-
 	background-color: #343434;
 	padding-top: 20%;
 	margin: 0;
 	height: inherit;
 	font-size: 15px;
-
 }
-
-
-
 #numStream {
 	margin-top: 10%;
 	top:3px;
 	padding-top: 20%;
 	font-size: .5em;
+}
+.overall {
+	width: 50%;
 }
