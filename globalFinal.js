@@ -41,7 +41,11 @@ var display = function(countries) {
 
 						$("#"+specificCountry+i).append("<div class=overlay><h1 id=numStream>"+response.tracks[i].num_streams+" <p>Streams</p></h1></div>")
 
+
+
+
 				};
+
 			})
 		})(country, selector);
 	}
@@ -51,9 +55,13 @@ var display = function(countries) {
 
 display(countries);
 
-
+$(".header").click(function(){
+		$(".list img").animate({opacity: '.2'});
+});
 		
-
+  $(".header").on("swipe",function(){
+    $(this).hide();
+  });   
 
 // $.getJSON("http://cooper-union-youtube-proxy.herokuapp.com/search/video/", function(duck){
 		
@@ -63,9 +71,5 @@ display(countries);
 // 	console.log(duck)
 
 });
-$(document).on("pagecreate","#united_states",function(){
-  $("div").on("tap",function(){
-    $(this).hide();
-  });                       
-});
+
 

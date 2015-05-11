@@ -4,9 +4,7 @@ html, body{
 	display: block;
 	width: 100%;
 }
-a{
-	font-style: none;
-}
+
 .overall{
 	position: relative;
 	display: flex;
@@ -106,7 +104,10 @@ opacity: .2;
 	padding:0;
 
 }
+.but{
 
+	font-color: orange;
+}
 @media all and (min-width:500px) and (max-width:1000px) {
 		.header h1 {
 	position: relative;
