@@ -3,6 +3,7 @@ html, body{
 	margin: 0px;
 	display: block;
 	width: 100%;
+	background-color: 
 }
 
 .overall{
@@ -19,7 +20,7 @@ html, body{
 	display: block;
 	position: fixed;
 	text-align: center;
-	background-color: #343434;
+	background-color: none;
 	z-index: 2;
 	top: 0;
 	float: left;
@@ -36,7 +37,7 @@ html, body{
 	padding: 0;
 }
 #first, #second, #third, #fourth{
-	position: relative;
+	position: block;
 	display: inline-block;
 	background-size: 100%;
 	float: left;
@@ -104,10 +105,7 @@ opacity: .2;
 	padding:0;
 
 }
-.but{
 
-	font-color: orange;
-}
 @media all and (min-width:500px) and (max-width:1000px) {
 		.header h1 {
 	position: relative;
@@ -126,10 +124,10 @@ opacity: .2;
 
 @media all and (min-width:100px) and (max-width:500px) {
 	.overlay{
-		position: relative;
+
 	}
 	.header h1 {
-	position: relative;
+
 	background-color: #343434;
 	padding-top: 20%;
 	margin: 0;
@@ -139,13 +137,10 @@ opacity: .2;
 }
 
 
-.list img:hover{
-	opacity: 1
-}
+
 #numStream {
-	position: relative;
 	margin-top: 10%;
 	top:3px;
-	padding-top: 10%;
+	padding-top: 20%;
 	font-size: .5em;
 }

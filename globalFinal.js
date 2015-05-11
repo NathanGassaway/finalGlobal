@@ -55,13 +55,37 @@ var display = function(countries) {
 
 display(countries);
 
-$(".header").click(function(){
-		$(".list img").animate({opacity: '.2'});
+$("#first").on("click", function(){
+		$(".us img").animate({opacity: '.2'});
+		$("#first").remove();
+		$("#united_states").animate({margin: '0px'})
+});
+$("#second").on("click", function(){
+		$(".gr img").animate({opacity: '.2'});
+		$("#second").remove();
+		$("#germany").animate({margin: '0px'})
+});
+$("#third").on("click", function(){
+		$(".ch img").animate({opacity: '.2'});
+		$("#third").remove();
+		$("#chile").animate({margin: '0px'})
+});
+$("#fourth").on("click", function(){
+		$(".fi img").animate({opacity: '.2'});
+		$("#fourth").remove();
+		 $("#finland").animate({margin: '0px'})
 });
 		
-  $(".header").on("swipe",function(){
-    $(this).hide();
-  });   
+  // $(".header").on("swipe",function(){
+  //   $(this).hide();
+  // });   
+
+$("#fourth").on("taphold",function(){
+  $(this).hide();
+});
+
+
+
 
 // $.getJSON("http://cooper-union-youtube-proxy.herokuapp.com/search/video/", function(duck){
 		
