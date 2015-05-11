@@ -31,7 +31,7 @@ var display = function(countries) {
 
 		//anonyous functions in javascript
 		(function(specificCountry, specificSelector){
-			$.getJSON("http://cooper-union-spotify-proxy.herokuapp.com/daily/"+specificCountry+"/2015-03-09", function(response) {
+			$.getJSON("http://cooper-union-spotify-proxy.herokuapp.com/daily/"+specificCountry+"/latest", function(response) {
 					
 
 				for (i = 0; i<=19; i++) {
@@ -57,34 +57,38 @@ display(countries);
 
 $("#first").on("click", function(){
 		$(".us img").animate({opacity: '.2'});
-		$("#first").remove();
+		$(this).hide();
 		$("#united_states").animate({margin: '0px'})
 });
 $("#second").on("click", function(){
 		$(".gr img").animate({opacity: '.2'});
-		$("#second").remove();
+		$(this).hide();
 		$("#germany").animate({margin: '0px'})
 });
 $("#third").on("click", function(){
 		$(".ch img").animate({opacity: '.2'});
-		$("#third").remove();
+		$(this).hide();
 		$("#chile").animate({margin: '0px'})
 });
 $("#fourth").on("click", function(){
 		$(".fi img").animate({opacity: '.2'});
-		$("#fourth").remove();
+		$(this).hide();
 		 $("#finland").animate({margin: '0px'})
 });
 		
-  // $(".header").on("swipe",function(){
-  //   $(this).hide();
-  // });   
 
-$("#fourth").on("taphold",function(){
+$("#finland").on("swipe",function(){
   $(this).hide();
+  	$("#fourth").hide();
 });
-
-
+$("#chile").on("swipe",function(){
+  $(this).hide();
+  $("#third").hide();
+});
+$("#germany").on("swipe",function(){
+  $(this).hide();
+  $("#second").hide();
+});
 
 
 // $.getJSON("http://cooper-union-youtube-proxy.herokuapp.com/search/video/", function(duck){

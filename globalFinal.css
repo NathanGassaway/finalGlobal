@@ -28,9 +28,9 @@ html, body{
 }
 .headerWrapper{
 	display: inline-block;
-	position: relative;
+	position: fix;
 	height: 100%;
-	width: 24%;
+	width: 100%;
 	text-align: center;
 	top: 0;
 	margin: 0;
@@ -41,12 +41,13 @@ html, body{
 	display: inline-block;
 	background-size: 100%;
 	float: left;
+	width: 24%;
 }
 
 .header h1 {
 	position: relative;
 	background-color: #343434;
-	padding-top: 10%;
+	padding-top: 15%;
 	margin: 0;
 	height: inherit;
 	color: white;
@@ -125,9 +126,7 @@ opacity: .2;
 }
 
 @media all and (min-width:300px) and (max-width:600px) {
-	.overlay{
 
-	}
 	.header h1 {
 	background-color: #343434;
 	padding-top: 20%;
@@ -140,6 +139,4 @@ opacity: .2;
 	top:3px;
 	padding-top: 20%;
 	font-size: .5em;
-}
-.overall {
 }
