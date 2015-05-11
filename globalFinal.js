@@ -45,7 +45,9 @@ var display = function(countries) {
 			})
 		})(country, selector);
 	}
-
+$("#numStream").on("swipe",function(){
+  $(this).hide();
+});
 
 };
 
