@@ -107,7 +107,7 @@ opacity: .2;
 
 }
 
-@media all and (min-width:700px) and (max-width:1200px) {
+@media all and (min-width:500px) and (max-width:1000px) {
 		.header h1 {
 	position: relative;
 	background-color: #343434;
@@ -123,7 +123,10 @@ opacity: .2;
 }
 }
 
-@media all and (min-width:200px) and (max-width:700px) {
+@media all and (min-width:200px) and (max-width:500px) {
+	.overlay{
+		position: relative;
+	}
 	.header h1 {
 	position: relative;
 	background-color: #343434;
@@ -134,8 +137,13 @@ opacity: .2;
 	font-size: 15px;
 
 }
+.list img:hover{
+	opacity: 1
+}
 #numStream {
 	position: relative;
-	top: 15%;
-	font-size: 1em;
+	margin-top: 10%;
+	top:3px;
+	padding-top: 10%;
+	font-size: .5em;
 }

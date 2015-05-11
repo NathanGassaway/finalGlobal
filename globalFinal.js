@@ -45,9 +45,7 @@ var display = function(countries) {
 			})
 		})(country, selector);
 	}
-$("#numStream").on("swipe",function(){
-  $(this).hide();
-});
+
 
 };
 
@@ -65,7 +63,9 @@ display(countries);
 // 	console.log(duck)
 
 });
+$(document).on("pagecreate","#united_states",function(){
+  $("div").on("tap",function(){
+    $(this).hide();
+  });                       
+});
 
-
-
-//maybe if a response is not playable, i make a big deal out of that fact with a boolean. and make that link take you somewhere.
